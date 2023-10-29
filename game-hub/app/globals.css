@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body styles */
+body {
+  background: #121212;
+  @apply text-gray-200 m-8;
+}
+h1, h2 {
+  @apply font-bold text-inherit text-lg;
+}
+main {
+  @apply max-w-5xl my-12 mx-auto px-8;
+}
+main > h2 {
+  @apply mb-4 pb-2 text-base ;
+}
+p > a {
+  @apply text-inherit underline;
+}
+
+/* nav styles */
+nav {
+  @apply
+    pb-4
+    flex items-center gap-8
+    border-b-2 border-gray-700
+    my-10 mx-2
+}
+
+nav a {
+  @apply text-gray-300
+}
+
+nav a:hover {
+  @apply text-blue-800;
+}
